@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 550px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+        
+    /* On small screens, set height to 'auto' for the grid */
+    @media screen and (max-width: 767px) {
+      .row.content {height: auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse visible-xs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Dashboard</a></li>
+        <li><a href="http://127.0.0.1:8000/home/">Home</a></li>
+        <li><a href="http://127.0.0.1:8000/djangobuildkit2k">Django Build Kit 2000</a></li>
+        <li><a href="#">Geo</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav hidden-xs">
+      <h2>Logo</h2>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#section1">Dashboard</a></li>
+        <li><a href="http://127.0.0.1:8000/home/">Home</a></li>
+        <li><a href="http://127.0.0.1:8000/djangobuildkit2k">Django Build Kit 2000</a></li>
+        <li><a href="#section3">Geo</a></li>
+      </ul><br>
+    </div>
+    <br>
+    
+    <div class="col-sm-9">
+      <div class="well">
+        <h4>Dashboard</h4>
+        <p>This is a Django Learning Project</p>
+      </div>
+      <div class="row">
+
+
+
+
+
+        <div class="col-sm-3">
+          <div class="well">
+            <h4>To Do List</h4>
+            <p>List of what to do here</p> 
+            <a href="http://127.0.0.1:8000/todo/">To Do List</a>
+            
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="well">
+            <h4>Django Build Kit 2000</h4>
+            <p>Create new Projects & Sites</p> 
+             <a href="http://127.0.0.1:8000/newdjangosite/">Go to page</a>
+
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="well">
+            <h4>Section_1</h4>
+            <p>Random Page created to do random tests</p> 
+            <a href="http://127.0.0.1:8000/section_1/">Go to page</a>
+          </div>
+
+        </div>
+        <div class="col-sm-3">
+          <div class="well">
+            <h4>CSS Testing Area</h4>
+            <p>For testing CSS stuff</p> 
+            <a href="http://127.0.0.1:8000/css_sandbox/">Go to page</a>
+          </div>
+        </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="row">
+
+        <div class="col-sm-4">
+          <div class="well">
+            <h4>TicTacToe in JS</h4>
+            <a href="http://127.0.0.1:8000/tictactoe_js/">Go to page</a>
+            </br>
+            </br>
+            <p>Code copied from 
+            <a href="https://www.thecrazyprogrammer.com/2019/09/javascript-tic-tac-toe-game.html">here</a>
+            </p> 
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="well">
+            <h4>HTML Testing Area</h4> 
+            <p>For testing HTML stuff</p> 
+            <a href="http://127.0.0.1:8000/html_sandbox/">Go to page</a>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="well">
+            <p>Text1</p> 
+            <p>Text2</p> 
+            <p>Text3</p> 
+          </div>
+        </div>
+
+
+
+
+
+
+        
+      </div>
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="well">
+            <p>Text4</p> 
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="well">
+            <p>Text5</p> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+
+<h1 style="border:2px solid Violet;">Instructions to Create a new Django Site</h1>
+
+</br>
+<h3>If you want to start a new Project:</h3>
+<p>0.) Project name shall be "newdjango"</p>
+<p>1.) Open Windows Power Shell Admin Mode (PSA) and go to folder where project should be created</p>
+<p>2.) Create Project: Enter 'django-admin startproject newdjango'</p>
+
+</br>
+
+<h3>For a new Site start here:</h3>
+<p>3.0) If project is already available and you only want to create a new App, start here. App name shall be "newdjangosite"
+</p>
+
+<p>3.1) Create App: Open PSA and go to project folder. Enter: 'python manage.py startapp newdjangosite'
+</p>
+
+<p>4.) Show directory in PSA: Enter ls. Your new App should be listed now.
+</p>
+
+<p>5.) Add App in settings. Open settings.py in main project folder and add 'newdjangosite' to INSTALLED_APPS = [....,...] (don't forget the comma)
+</p>
+
+<p>6.1) <b>Create view for target url by adding httpresonse</b></br>
+  go to newdjangosite/views.py and add 'from django.http import HttpResponse'
+
+</p>
+
+<p>6.2) <b>create view itself with function</b>
+example: 
+def newdjangositeView(request):
+  return render(request, 'newdjangosite.html')
+</br>
+or for a simple test 'return HttpResponse("Hallo")'
+
+</p>
+
+<p>8.) add request to urls.py </br>
+path('newdjangosite/', newdjangositeView),
+
+</p>
+
+<p>9.) add path to views in urls.py:</br>
+  'from newdjangosite.views import newdjangositeView'
+</p>
+
+<p>10.) <b>create the newdjangosite.html</b>
+  go to 'templates' and create file 'newdjangosite.html', write something for testing, for example &lt;h1&gt;Hello&lt;/h1&gt;
+</p>
+
+
+
+<br>
+<br>
+
+<h1 style="border:2px solid Violet;">Instructions to Create a To Do List</h1>
+
+
+
+
+<p> 1.)
+python manage.py startapp todo_1
+</p>
+
+
+
+
+<p> 2.)
+Go to views.py <br>
+from django.http import HttpResponse
+
+def todo_1_View(request): <br>
+	return HttpResponse("Hello this is the to do list test")<br>
+<br>
+
+	or<br>
+<br>
+
+	def todo_1_View(request):<br>
+	return render(request, 'todo_1.html')<br>
+
+
+</p>
+
+
+
+
+<p> 3.)
+	in Urls add <br>
+	from todo_1.views import todo_1_View<br>
+
+and<br>
+    path('todo_1/', todo_1_View),
+    <br>
+
+    http://127.0.0.1:8000/todo_1/ should run now
+</p>
+
+
+<p> 4.)
+	create html file in templates (eg todo_1.html)
+	
+</p>
+
+
+
+
+<p> 5.)
+	
+	you might want to add in settings / TEMPLATES =[...<br>
+ <br>
+	 'DIRS': [os.path.join(BASE_DIR, 'templates')],
+
+	  <br>
+</p>
+
+
+
+
+
+
+<p> 6.)
+	make a test list, add in todo_1.html:
+
+	&lt;h1&gt;To Do List _1&lt;/h1&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;temporary item 1&lt;/li&gt;
+	&lt;li&gt;temporary item 2&lt;/li&gt;	
+&lt;/ul&gt;
+	
+</p>
+
+
+
+
+
+<p> 7.) create model. add new class in todo_1/models:
+	class TodoItem_1(models.Model):
+	content = models.TextField()
+	
+	This class interacts with data in database.
+
+	
+</p>
+
+
+
+
+
+
+<p> 8.) make migrations. In cmd: <br>
+	python manage.py makemigrations
+	
+	
+</p>
+
+
+
+
+
+
+<p> 9.) Execute the new model. In cmd enter: <br>
+	python manage.py migrate
+	
+</p>
+
+
+
+
+
+
+<p> .)
+
+	<a href="https://youtu.be/ovql0Ui3n_I?t=627">Continue here</a>
+</p>
+
+
+
+
+
+
+<p> .)
+	
+	
+</p>
+
+
+
+
+
+
+<p> .)
+	
+	
+</p>
+
+
+
+
+
+
+<p> .)
+	
+	
+</p>
+
+
+<br>
+<br>
+<a href="http://127.0.0.1:8000/home/">back home</a>
