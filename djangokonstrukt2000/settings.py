@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'djangobuildkit2k',
     'html_sandbox',
     'todo_1',
+    'html_sandbox_2',
 ]
 
 MIDDLEWARE = [

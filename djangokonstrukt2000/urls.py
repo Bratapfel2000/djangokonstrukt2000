@@ -23,6 +23,7 @@ from css_sandbox.views import css_sandboxView
 from tictactoe_js.views import tictactoeView
 from djangobuildkit2k.views import djangobuildkit2kView
 from html_sandbox.views import html_sandboxView
+from html_sandbox_2.views import html_sandbox_2View
 from todo_1.views import todo_1_View
 
 urlpatterns = [
@@ -37,6 +38,7 @@ urlpatterns = [
     path('tictactoe_js/',tictactoeView),
     path('djangobuildkit2k/', djangobuildkit2kView),
     path('html_sandbox/', html_sandboxView),
+    path('html_sandbox_2/', html_sandbox_2View),
     path('todo_1/', todo_1_View),
 
 ]
