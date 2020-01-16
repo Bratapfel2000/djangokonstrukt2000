@@ -51,6 +51,9 @@ INSTALLED_APPS = [
     'w3_sandbox_1',
     'w3_sandbox_2',
     'w3_sandbox_3',
+    'js_sandbox_1',
+    'js_sandbox_2',
+    'js_sandbox_3',
 ]
 
 MIDDLEWARE = [

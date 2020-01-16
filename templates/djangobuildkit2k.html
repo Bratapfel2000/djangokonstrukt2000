@@ -1,18 +1,132 @@
-<h1>Django Build Kit 2000</h1>
-<h3>Try to run the style of this site only with html tutorials. No CSS, Bootstrap or whatever</h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 550px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+        
+    /* On small screens, set height to 'auto' for the grid */
+    @media screen and (max-width: 767px) {
+      .row.content {height: auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse visible-xs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Menu</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="/home/">Home</a></li>
+        <li><a href="/section_1/">Webtools Testing Area</a></li>
+        <li class="active"><a href="/djangobuildkit2k/">Django Build Kit 2000</a></li>
+        <li><a href="/html_sandbox_3/">Coming soon...</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav hidden-xs">
+      <h2>Menu</h2>
+      <ul class="nav nav-pills nav-stacked">
+        <li><a href="/home/">Home</a></li>
+        <li><a href="/section_1/">Webtools Testing Area</a></li>
+        <li class="active"><a href="/djangobuildkit2k/">Django Build Kit 2000</a></li>
+        <li><a href="/html_sandbox_3/">Coming soon...</a></li>
+      </ul><br>
+    </div>
+    <br>
+    
+    <div class="col-sm-9">
+      <div class="well">
+        <h4>Dashboard</h4>
+        <p>Some Django Projects</p>
+      </div>
+      <div class="row">
 
 
-<br>
-<br>
-<br>
-<br>
-
-<h2>Create New Projects and Apps</h2>
-<p>Instructions to create new projects and apps with Django</p>
-<a href="/newdjangosite/" title="newdjangosite">Visit the Page</a>
 
 
 
-<br>
-<br>
-<a href="/home/">back home</a>
+      
+		<div class="col-sm-6">
+          <div class="well">
+			<h4>#1: "My First Blog" - Based on Django Girls Tutorial</h4>
+			<h2></h2>
+			<a href="http://bratapfel2k.pythonanywhere.com/">Project: My First Blog</a><br>
+			<a href="http://bratapfel2k.pythonanywhere.com/admin">Project: My First Blog - admin</a><br>
+			<a href="https://github.com/Bratapfel2000/my-first-blog">Link to Github</a><br>
+			<a href="https://tutorial.djangogirls.org/en/">Link to Django Girls Tutorial</a>
+          </div>
+        </div>
+
+     
+
+        <div class="col-sm-6">
+          <div class="well">
+			<h4>#2: DjangoKonstrukt2000 </h4>
+			<a href="http://bratafpfel2000.pythonanywhere.com/home/">Project: DjangoKonstrukt2000</a><br>
+			<a href="https://github.com/Bratapfel2000/djangokonstrukt2000">Link to Github</a>       
+		</div>
+        </div>
+        
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="row">
+
+    
+
+
+
+<div class="col-sm-6">
+          <div class="well">
+			<h4>Create New Projects and Apps</h4>
+			<p>Instructions to create new projects and apps with Django</p>
+			<a href="/newdjangosite/" title="newdjangosite">Visit the Page</a>
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

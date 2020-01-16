@@ -29,6 +29,9 @@ from todo_1.views import todo_1_View
 from w3_sandbox_1.views import w3_sandbox_1View
 from w3_sandbox_2.views import w3_sandbox_2View
 from w3_sandbox_3.views import w3_sandbox_3View
+from js_sandbox_1.views import js_sandbox_1View
+from js_sandbox_2.views import js_sandbox_2View
+from js_sandbox_3.views import js_sandbox_3View
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -48,4 +51,7 @@ urlpatterns = [
     path('w3_sandbox_1/', w3_sandbox_1View),
     path('w3_sandbox_2/', w3_sandbox_2View),
     path('w3_sandbox_3/', w3_sandbox_3View),
-]
+    path('js_sandbox_1/', js_sandbox_1View),
+    path('js_sandbox_2/', js_sandbox_2View),
+    path('js_sandbox_3/', js_sandbox_3View),
+            ]

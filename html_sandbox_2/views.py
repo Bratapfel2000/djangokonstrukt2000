@@ -3,4 +3,3 @@ from django.http import HttpResponse
 
 def html_sandbox_2View(request):
 	return render(request, 'html_sandbox_2.html')
-	#return HttpResponse("Hallo")
