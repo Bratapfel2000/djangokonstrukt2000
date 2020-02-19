@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'newdjangosite',
     'css_sandbox',
     'tictactoe_js',
+    'tictactoe_js_2',
     'djangobuildkit2k',
     'html_sandbox',
     'todo_1',
@@ -54,6 +55,7 @@ INSTALLED_APPS = [
     'js_sandbox_1',
     'js_sandbox_2',
     'js_sandbox_3',
+    'todo_2',
 ]
 
 MIDDLEWARE = [

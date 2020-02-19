@@ -21,11 +21,13 @@ from home.views import homeView
 from newdjangosite.views import newdjangositeView
 from css_sandbox.views import css_sandboxView
 from tictactoe_js.views import tictactoeView
+from tictactoe_js_2.views import tictactoe2View
 from djangobuildkit2k.views import djangobuildkit2kView
 from html_sandbox.views import html_sandboxView
 from html_sandbox_2.views import html_sandbox_2View
 from html_sandbox_3.views import html_sandbox_3View
 from todo_1.views import todo_1_View
+from todo_2.views import todo_2_View
 from w3_sandbox_1.views import w3_sandbox_1View
 from w3_sandbox_2.views import w3_sandbox_2View
 from w3_sandbox_3.views import w3_sandbox_3View
@@ -43,11 +45,13 @@ urlpatterns = [
     path('newdjangosite/', newdjangositeView),
     path('css_sandbox/',css_sandboxView),
     path('tictactoe_js/',tictactoeView),
+    path('tictactoe_js_2/',tictactoe2View),
     path('djangobuildkit2k/', djangobuildkit2kView),
     path('html_sandbox/', html_sandboxView),
     path('html_sandbox_2/', html_sandbox_2View),
     path('html_sandbox_3/', html_sandbox_3View),
     path('todo_1/', todo_1_View),
+    path('todo_2/', todo_2_View),
     path('w3_sandbox_1/', w3_sandbox_1View),
     path('w3_sandbox_2/', w3_sandbox_2View),
     path('w3_sandbox_3/', w3_sandbox_3View),
