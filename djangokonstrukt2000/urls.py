@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from section_1.views import section_1View
 from todo.views import todoView, addTodo, deleteTodo
 from home.views import homeView
@@ -58,4 +58,5 @@ urlpatterns = [
     path('js_sandbox_1/', js_sandbox_1View),
     path('js_sandbox_2/', js_sandbox_2View),
     path('js_sandbox_3/', js_sandbox_3View),
+    path('isf/', include("isf.urls")),
             ]

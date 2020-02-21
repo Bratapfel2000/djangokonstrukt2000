@@ -267,5 +267,85 @@ and<br>
 
 
 
+<br>
+<br>
+
+<h1>Instructions to Integrate Static Files</h1>
+
+
+
+
+<p> 1.) Needs to be in settings.py: <br>
+	INSTALLED_APPS = [...
+    'django.contrib.staticfiles',
+    ...]
+<br>
+and 
+<br>
+STATIC_URL = '/static/'
+</p>
+
+
+
+
+<p> 2.) Create new App
+</p>
+
+<p> 3.) In Appp folder create subfolder "static" with subfolder as App name and create there 3 subfolders: 
+
+<ul>
+  <li>"css"</li>
+  <li>"img"</li>
+  <li>"js"</li>
+</ul>  
+
+and put your files in it.
+<br>(ie appname/static/appname/css ...)
+</p>
+
+
+<p> 4.) <ul>
+<li>In Appp folder create subfolder "templates" </li>
+<li>in "templates" create subfolder with same name as App folder</li>
+<li>create html file in this folder</li>
+</ul>
+
+</p>
+
+<p> 5.) in html file put in first line: <br>
+{% load static %}
+</p>
+
+<p> 6.) Now add CSS, JS and Picture:
+<br>
+<img src="http://bratapfel2000.de/wp-content/uploads/2020/02/makestaticmigrations.png" alt="Eeehhhh">
+
+</p>
+
+<p> .)
+</p>
+
+<p> .)
+</p>
+
+<p> .)
+</p>
+
+<p> .)
+</p>
+
+<p> .)
+</p>
+
+<p> .)
+</p>
+
+<p> .)
+</p>
+
+<p> .)
+</p>
+
+
 </body>
 </html>
