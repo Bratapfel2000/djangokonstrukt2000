@@ -316,28 +316,57 @@ and put your files in it.
 {% load static %}
 </p>
 
-<p> 6.) Now add CSS, JS and Picture:
+<p> 6.) Now add CSS, JS and Picture to html:
 <br>
 <img src="http://bratapfel2000.de/wp-content/uploads/2020/02/makestaticmigrations.png" alt="Eeehhhh">
 
 </p>
 
-<p> .)
+<p> 7.) Add App in Settings:<br>
+Find the name of Config as class name in apps.py of app folder.<br>
+Add "app folder name".apps."configname"<br>
+
 </p>
 
-<p> .)
+<p> 8.) Create folder "static/main" in project folder with subfolders as sort of default values:<br>
+<ul>
+  <li>"css"</li>
+  <li>"img"</li>
+  <li>"js"</li>
+</ul>  
 </p>
 
-<p> .)
+<p> 9.) Add static directory: <br><br>
+&nbsp; &nbsp; &nbsp;STATICFILES_DIRS = (<br>
+ &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;      os.path.join(BASE_DIR, "static"),<br>
+&nbsp; &nbsp; &nbsp;)<br>
+
+
 </p>
 
-<p> .)
+<p> 10.) Create view: <br><br>
+&nbsp;def appnameView(request):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;	 return render(request, "appname/appname.html")
 </p>
 
-<p> .)
+<p> 11.) create appname/urls.py and include:<br><br>
+from django.urls import path<br>
+from .views import appnameView<br><br>
+
+
+urlpatterns = [<br>
+    path('', appnameView),<br>
+            ]<br>
+
+			
+			
 </p>
 
-<p> .)
+<p> 12.) in project/urls.py add to urlspatters: <br><br>
+    path('appname/', include("appname.urls")),<br><br>
+
+required also: from django.urls import include 
+
 </p>
 
 <p> .)

@@ -15,6 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf import settings
+from django.conf.urls.static import static
 from section_1.views import section_1View
 from todo.views import todoView, addTodo, deleteTodo
 from home.views import homeView
@@ -60,3 +62,12 @@ urlpatterns = [
     path('js_sandbox_3/', js_sandbox_3View),
     path('isf/', include("isf.urls")),
             ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root = settings.STATIC_ROOT)
+
+    thing = static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    print(thing, type(thing[0]))
+    print(thing[0].pattern)
+    print(dir(thing[0]))
+    print(urlpatterns[1],type(urlpatterns[1]))

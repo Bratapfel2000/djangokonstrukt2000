@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
+    'django.contrib.staticfiles', 
     'section_1',
     'todo',
     'home',
@@ -82,6 +82,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                #'django.template.context_processors.media',
             ],
         },
     },
@@ -144,4 +145,10 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
 
-STATIC_ROOT = 'c:/kkkkkkkaaaaaaaa2_cdn'
+#STATIC_ROOT = 'c:/kkkkkkkaaaaaaaa2_cdn'
+
+#STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'staticfiles_cdn')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_cdn')
+#
+#MEDIA_URL = '/mediafiles/'
+#MDEIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'mediafiles_cdn')
